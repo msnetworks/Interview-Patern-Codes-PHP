@@ -1,4 +1,4 @@
-Here's a **README.md** file you can use for your GitHub repository:
+Here's the updated **README.md** with the additional pattern:
 
 ```markdown
 # Patterns in PHP
@@ -12,6 +12,7 @@ This repository demonstrates the creation of various patterns using loops in PHP
 1. [Number Patterns](#number-patterns)
     - [Incrementing Numbers](#incrementing-numbers)
     - [Incrementing Numbers with Continued Sequence](#incrementing-numbers-with-continued-sequence)
+    - [Number Sequence Pattern](#number-sequence-pattern)
 2. [Star Patterns](#star-patterns)
     - [Right-Angled Triangle](#right-angled-triangle)
     - [Right-Angled Triangle (Mirrored)](#right-angled-triangle-mirrored)
@@ -71,6 +72,26 @@ numpat1(5);
 4 5 6 
 7 8 9 10 
 11 12 13 14 15 
+```
+
+### Number Sequence Pattern
+```php
+for ($i = 1; $i < 5; $i++) {
+    echo $i . ' ';
+    $n = $i;
+    for ($j = 1; $j < 3; $j++) {
+        $n  = $n + 4;
+        echo $n, ' ';
+    }
+    echo "\\n";
+}
+```
+**Output:**
+```
+1 5 9 
+2 6 10 
+3 7 11 
+4 8 12 
 ```
 
 ---
